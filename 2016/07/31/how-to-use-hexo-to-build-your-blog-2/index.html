@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>修改 Hexo 樣式主題並設定 Url 與 Sitemap - toughpeter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="上一篇介紹如何使用 Hexo 與 Github 架設自己的 Blog，這篇會記錄：  如何把主題樣式修改成其他版型 如何設定成自己想要的網址 如何上傳 Sitemap">
+<meta name="keywords" content="hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="修改 Hexo 樣式主題並設定 Url 與 Sitemap">
+<meta property="og:url" content="https://toughpeter.github.io/2016/07/31/how-to-use-hexo-to-build-your-blog-2/index.html">
+<meta property="og:site_name" content="toughpeter">
+<meta property="og:description" content="上一篇介紹如何使用 Hexo 與 Github 架設自己的 Blog，這篇會記錄：  如何把主題樣式修改成其他版型 如何設定成自己想要的網址 如何上傳 Sitemap">
+<meta property="og:image" content="https://toughpeter.github.io/2016/07/31/how-to-use-hexo-to-build-your-blog-2/cover.png">
+<meta property="og:updated_time" content="2017-12-01T16:08:06.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="修改 Hexo 樣式主題並設定 Url 與 Sitemap">
+<meta name="twitter:description" content="上一篇介紹如何使用 Hexo 與 Github 架設自己的 Blog，這篇會記錄：  如何把主題樣式修改成其他版型 如何設定成自己想要的網址 如何上傳 Sitemap">
+<meta name="twitter:image" content="https://toughpeter.github.io/2016/07/31/how-to-use-hexo-to-build-your-blog-2/cover.png">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="/webfonts/ptserif/main.css" rel='stylesheet' type='text/css'>
+  <link href="/webfonts/source-code-pro/main.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header">
+  <div id="header-outer" class="outer">
+    <div id="header-inner" class="inner">
+      <a id="main-nav-toggle" class="nav-icon" href="javascript:;"></a>
+      <a id="logo" class="logo" href="/"></a>
+      <nav id="main-nav">
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories">Categories</a>
+        
+          <a class="main-nav-link" href="/tags">Tags</a>
+        
+          <a class="main-nav-link" href="/about">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://toughpeter.github.io"></form>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+    <section id="main" class="outer"><article id="post-how-to-use-hexo-to-build-your-blog-2" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      修改 Hexo 樣式主題並設定 Url 與 Sitemap
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-meta">
+      <a href="/2016/07/31/how-to-use-hexo-to-build-your-blog-2/" class="article-date">
+  <time datetime="2016-07-31T02:17:27.000Z" itemprop="datePublished">2016-07-31</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/hexo/">hexo</a>
+  </div>
+
+      
+    </div>
+    <div class="article-entry" itemprop="articleBody">
+      
+        <img src="/2016/07/31/how-to-use-hexo-to-build-your-blog-2/cover.png">
+<p>上一篇介紹如何使用 Hexo 與 Github 架設自己的 Blog，這篇會記錄：</p>
+<ol>
+<li>如何把主題樣式修改成其他版型</li>
+<li>如何設定成自己想要的網址</li>
+<li>如何上傳 Sitemap</li>
+</ol>
+<a id="more"></a>
+<h2 id="設定-Hexo-的主題（Theme）"><a href="#設定-Hexo-的主題（Theme）" class="headerlink" title="設定 Hexo 的主題（Theme）"></a>設定 Hexo 的主題（Theme）</h2><p>Hexo 會依據在 _config.yml 中的設定，到 themes 資料夾中找尋相對應的圖片、CSS 與 JavaScript 檔案，以下面 _config.yml 裡的設定，Hexo 在生成靜態檔案的時候就會去 themes 資料夾找名字叫做 landscape 的這個主題。<br><figure class="highlight plain"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">theme: landscape</span><br></pre></td></tr></table></figure></p>
+<p>所以我們只要把下載好的主題樣式檔案放在 themes 資料夾中，並修改 _config.yml 的設定就能更換主題。Hexo 官方網站上有許多現成的主體可以使用，假設你想修改 landscape 主題的 CSS檔，只要在 themes/landscape/source/css 找到對應的CSS檔就能直接修改。</p>
+<p>若你想更動主題用到的圖片，則必須到 themes/landscape/source 中找到 _images 的資料夾，這邊的圖片未來將被用在產生靜態網站。</p>
+<h2 id="客製化自己的Url"><a href="#客製化自己的Url" class="headerlink" title="客製化自己的Url"></a>客製化自己的Url</h2><ol>
+<li>CNAME設定<br>登入你的網域設定後台（GoDaddy、PChome 等等），在你的網域按新增 Record 並選擇 CNAME ，假設你買的網域名稱叫「hiPeter.com」，在 Host 欄位裡填 blog，你的部落格的網址就會是 blog.hiPeter.com ，接下來在「指向（Points）」的欄位填 username.github.io，記得把 username 換成你的 Github 帳號。</li>
+</ol>
+<ol>
+<li><p>在 Github 打開你的 username.github.io，找到「Settings」頁面，裡面有個「Custom domain」，在裡面填入 <a href="http://blog.hiPeter.com" target="_blank" rel="noopener">http://blog.hiPeter.com</a></p>
+</li>
+<li><p>經過以上兩個步驟基本上就完成了，第一次連線可能會需要等幾分鐘到幾小時不等，不過當你重新 generate 並 deploy 新文章時，Github 會把之前設定好的「Custom domain」取消掉，這是因為設定網址的CNAME檔會被新 Deploy 檔案覆蓋掉，接下來我們要透過以下這個套件幫我們解決這個問題。</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-cname --save</span><br></pre></td></tr></table></figure>
+<p>記得在 _config.yml 中的設定 Url。</p>
+<figure class="highlight plain"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">url: https://blog.hiPeter.com</span><br></pre></td></tr></table></figure>
+<p>之後每次 generate時就會重新生成CNAME的設定檔，如此一來就能解決這個問題囉！</p>
+<h2 id="Sitemap設定"><a href="#Sitemap設定" class="headerlink" title="Sitemap設定"></a>Sitemap設定</h2><ol>
+<li><p>Sitemap<br>npm install hexo-generator-sitemap –save<br>之後重新啟動 hexo server，連到 /sitemap.xml 就能看到 Sitemap，</p>
+</li>
+<li><p>向 Google Search Console 提交Sitemap<br>向 <a href="https://www.google.com/webmasters" target="_blank" rel="noopener">Google Search Console</a> 提交 Sitemap 即可優化搜尋結果，此時 Google 會要求你驗證網站所有權，到 theme/landscape/layout/_partial/head.ejs 這個檔案，就能找到網站的 html meta 資訊，可在這邊插入 Google 的驗證程式碼。</p>
+</li>
+</ol>
+<p>下一篇會記錄文章內容設定與網站資產管理。</p>
+
+      
+    </div>
+    
+    
+      <footer class="article-footer">
+        
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2016/08/04/how-to-use-hexo-to-build-your-blog-3/" id="article-nav-newer" class="article-nav-link-wrap">
+      <div class="article-nav-title"><span>&lt;</span>&nbsp;
+        
+          使用 Hexo 撰寫文章
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/07/28/how-to-use-hexo-to-build-your-blog-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用 Hexo 與 Github 架設自己的 Blog&nbsp;<span>&gt;</span></div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="share_addthis">
+  <div class="sharing addthis_toolbox share">
+    <a class="addthis_button_facebook_like"></a>
+    <a class="addthis_button_tweet"></a>
+    <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-560c64c35486b3d4" async="async"></script>
+</div>
+
+
+
+
+
+</section>
+    <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 peter tung&nbsp;
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by <a href="http://github.com/ppoffice">PPOffice</a>
+    </div>
+  </div>
+</footer>
+    
+
+<script src="/js/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+  </div>
+</body>
+</html>
